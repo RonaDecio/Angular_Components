@@ -1,0 +1,14 @@
+<div>
+  <h2>Grade Calculator</h2>
+
+  <label for="grade">Enter a grade: </label>
+  <input type="number" #gradeInput placeholder="Enter grade" />
+  <button (click)="addGrade(gradeInput.valueAsNumber); gradeInput.value = '';">Add Grade</button>
+
+  <h3>Grades Entered: {{ grades.join(', ') }}</h3>
+
+  <h3>Average Grade: {{ average | number:'1.2-2' }}</h3>
+
+  <h3>Letter Grade: {{ letterGrade }}</h3>
+</div>
+
