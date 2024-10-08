@@ -1,0 +1,16 @@
+<div>
+  <h2>Discount Calculator</h2>
+
+  <label for="price">Enter price: </label>
+  <input type="number" [(ngModel)]="price" placeholder="Enter price" />
+  <br/><br/>
+
+  <label for="discountRate">Enter discount rate (%): </label>
+  <input type="number" [(ngModel)]="discountRate" placeholder="Enter discount rate" />
+  <br/><br/>
+
+  <button (click)="calculateDiscount()">Calculate Discounted Price</button>
+
+  <!-- Display discounted price -->
+  <h3 *ngIf="discountedPrice > 0">Discounted Price: {{ discountedPrice | number:'1.2-2' }}</h3>
+</div>
