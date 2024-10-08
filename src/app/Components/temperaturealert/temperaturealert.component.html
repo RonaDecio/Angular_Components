@@ -1,0 +1,13 @@
+<div>
+  <h2>Temperature Alert</h2>
+
+  <label for="temperature">Enter temperature in °C: </label>
+  <input type="number" [(ngModel)]="temperature" placeholder="Enter temperature" />
+  <br/><br/>
+
+  <button (click)="checkTemperature()">Check Temperature</button>
+
+  <!-- Display temperature message -->
+  <p>{{ temperatureMessage }}</p>
+</div>
+
