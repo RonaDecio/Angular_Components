@@ -1,0 +1,13 @@
+<div>
+  <h2>Simple Slider</h2>
+
+  <label for="slider">Adjust Volume: </label>
+  <input
+    type="range"
+    id="slider"
+    min="0"
+    max="100"
+    [(ngModel)]="sliderValue" />
+
+  <p>Current Value: {{ sliderValue }}%</p>
+</div>
