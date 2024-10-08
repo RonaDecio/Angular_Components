@@ -1,0 +1,19 @@
+<div>
+  <h2>Letter Replacer</h2>
+
+  <label for="word">Enter a word: </label>
+  <input type="text" [(ngModel)]="word" placeholder="Enter word" />
+  <br/><br/>
+
+  <label for="letterToReplace">Letter to replace: </label>
+  <input type="text" [(ngModel)]="letterToReplace" maxlength="1" placeholder="Enter letter" />
+  <br/><br/>
+
+  <label for="replacementLetter">Replacement letter: </label>
+  <input type="text" [(ngModel)]="replacementLetter" maxlength="1" placeholder="Enter letter" />
+  <br/><br/>
+
+  <button (click)="replaceLetter()">Replace Letter</button>
+
+  <h3 *ngIf="updatedWord">{{ updatedWord }}</h3>
+</div>
