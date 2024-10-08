@@ -1,0 +1,11 @@
+<div>
+  <h2>Leap Year Checker</h2>
+
+  <label for="year">Enter a year: </label>
+  <input type="number" [(ngModel)]="year" placeholder="Enter year" />
+  <br/>
+
+  <button (click)="checkLeapYear()">Check Leap Year</button>
+
+  <h3>{{ isLeapYear }}</h3>
+</div>
