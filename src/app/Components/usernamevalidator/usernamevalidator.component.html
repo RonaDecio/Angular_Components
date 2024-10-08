@@ -1,0 +1,7 @@
+<div>
+  <h2>Username Validator</h2>
+  <input type="text" [(ngModel)]="username" placeholder="Enter username" />
+  <br/>
+  <button (click)="validateUsername()">Validate Username</button>
+  <p [ngStyle]="{'color': isValid ? 'green' : 'red'}">{{ validationMessage }}</p>
+</div>
