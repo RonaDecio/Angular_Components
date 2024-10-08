@@ -1,0 +1,17 @@
+<div>
+  <h2>Memory Match Game</h2>
+
+  <div class="game-grid">
+    <div
+      *ngFor="let card of cards"
+      class="card"
+      [ngClass]="{ 'flipped': card.flipped || matchedCards.includes(card) }"
+      (click)="flipCard(card)"
+    >
+      <div class="card-inner">
+        <div class="card-front">{{ card.flipped || matchedCards.includes(card) ? card.symbol : '?' }}</div>
+        <div class="card-back">?</div>
+      </div>
+    </div>
+  </div>
+</div>
