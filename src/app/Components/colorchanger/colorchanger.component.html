@@ -1,0 +1,17 @@
+<div>
+  <h2>Background Color Changer</h2>
+
+  <!-- Buttons to change background color -->
+  <button (click)="changeColor('red')">Red</button>
+  <button (click)="changeColor('green')">Green</button>
+  <button (click)="changeColor('blue')">Blue</button>
+  <button (click)="changeColor('yellow')">Yellow</button>
+  <button (click)="changeColor('white')">Reset</button>
+
+  <!-- Div with dynamic background color -->
+  <div [ngStyle]="{'background-color': currentColor}"
+       style="width: 200px; height: 200px; margin-top: 20px; border: 1px solid #000;">
+  </div>
+
+  <p>Current Background Color: {{ currentColor }}</p>
+</div>
